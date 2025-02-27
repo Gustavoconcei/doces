@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="HomePageModalCart.css">
+    <link rel="stylesheet" href="/Brigadeiros/Brigadeiros.js">
+    <script src="HomePage.js" defer></script>
+    <script src="/Brigadeiros/BrigadeirosModalCart.js"></script>
+    <script src="HomePageModalCart.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Doces | Faça seus pedidos</title>
+</head>
+<header>
+    <div class="company-name"><img src="/HomePage - Doces/HomePage - Imagens/HomePage - img -logomarca/Gemini_Generated_Image_14mxrp14mxrp14mx-removebg-preview.png" alt="" height="70px"></div>
+</header>
+<body>
+    <div class="menu">
+        <div class="ms">
+            <a href="/Brigadeiros/Brigadeiros.html"><button class="m1"><img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-menu/Brigadeiro.png" alt="">Brigadeiros</button></a>
+            <button class="m2"><img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-menu/Bolo.png" alt="">Bolos</button>
+            <button class="m3"><img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-menu/Torta.png" alt="">Tortas</button>
+            <button class="m4"><img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-menu/Copo-da-felicidade.png" alt=""><br>Copo da felicidade</button>
+        </div>
+        <div class="rollbar">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+        </div>
+    </div>
+    
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio" id="radio1">
+            <input type="radio" name="radio" id="radio2">
+            <input type="radio" name="radio" id="radio3">
+            <input type="radio" name="radio" id="radio4">
+
+            <!--Slide Images-->
+            <div class="slide first">
+                <img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-slide/WhatsApp Image 2025-01-24 at 16.39.07.jpeg" alt="" width="320px">
+            </div>
+            <div class="slide">
+                <img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-slide/WhatsApp Image 2025-01-24 at 16.39.08.jpeg" alt="" width="320px">
+            </div>
+            <div class="slide">
+                <img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-slide/WhatsApp Image 2025-01-24 at 16.39.07 (2).jpeg" alt="" width="320px">
+            </div>
+            <div class="slide">
+                <img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-slide/WhatsApp Image 2025-01-24 at 16.39.07 (1).jpeg" alt="" width="320px">
+            </div>
+            <!--Fim Slide Images-->
+
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+
+            <!--Manual-->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+    <div class="club">
+        <a href="/ChocoBox/ChocoBox - HomePage/ChocoBox.html">
+        <button class="btnclub">
+            <div class="textbtnclub">
+                Clube<p>Choco <h2>Box</h2><i class="bi bi-box-seam"></i></p>
+            </div>
+        </button>
+        </a>
+        <div class="moreinfo">
+            <p>Clique aqui pra mais informações</p>
+        </div>
+    </div>
+    <div class="text">
+        <div class="mnsgtext">
+            <p>Combine os sabores favoritos com os melhores doces e peça agora</p>
+        </div>
+    </div>
+    <div class="myfavs">
+        <button class="myfavsbtn">
+            <div class="myfavstext"><i class="bi bi-suit-heart-fill"></i><p>| Meus favoritos</p></div>
+        </button>
+    </div>
+    <div class="mycart">
+        <button id="mycartbtn" class="mycartbtn">
+            <div class="mycarttext">| Meu carrinho<i class="bi bi-cart3"></i></div>
+        </button>
+    </div>
+</body>
+<footer>
+    <div class="footermenu">
+        <div class="house"><i class="bi bi-house-door-fill"></i></div>
+        <div class="search"><i class="bi bi-search"></i></div>
+        <div class="orders"><i class="bi bi-clipboard2"></i></div>
+        <div class="perfil"><i class="bi bi-person"></i></div>
+    </div>
+</footer>
+</html>
+
+<!-- MyCart Modal -->
+<dialog id="myCartModal" class="myCartModal">
+    <div class="headercartmodal">
+        <button id="closecartmodal"><i class="bi bi-chevron-down"></i></button>
+        <div class="title">MEU CARRINHO</div>
+    </div>
+    <hr></hr>
+    <div id="cartItems"></div> <!-- Local onde os itens do carrinho serão exibidos -->
+    <div class="formadepagamento"></div>
+</dialog>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Brigadeiros.css">
+    <script src="Brigadeiros.js" defer></script>
+    <script src="BrigadeirosModalCart.js" defer></script>
+    <script src="/HomePage - Doces/HomePageModalCart.js" defer></script>
+    <link rel="stylesheet" href="/HomePage - Doces/HomePageModalCart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Brigadeiros | Sweet Lab</title>
+</head>
+<header>
+    <img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-slide/WhatsApp Image 2025-01-24 at 16.39.07 - Copia.jpeg" alt="">
+</header>
+
+<body>
+    <div class="name-container">
+        <a href="/HomePage - Doces/HomePage.html">
+            <button><i class="bi bi-arrow-left-short"></i></button>
+        </a>
+        <p class="title">
+            <img src="/HomePage - Doces/HomePage - Imagens/HomePage - img-menu/Brigadeiro.png" alt="">Brigadeiros
+        </p>
+    </div>
+    
+    <div class="tipos-brigadeiros">Tipos de brigadeiros</div>
+
+    <!--MENU-->
+    <div id="menu">
+
+        <main>
+            
+            <div class="line1">
+                <!--PRODUTO-->
+                <button id="produto1" class="produto" data-name="Brigadeiro Gourmet" data-price="5.00" data-img="">
+                    <img src="/Brigadeiros/Brigadeiros img/WhatsApp_Image_2025-01-24_at_16.39.07__3_-removebg-preview.png" alt="" >
+
+                    <div class="descricao">
+                        <p class="nome-doce">Brigadeiro Gourmet</p>
+                        <p class="doce-description">Brigadeiro de 15g com granulê de chocolate</p>
+                        <p class="price">A partir de R$5,00</p>
+                    </div>
+                </button>
+                <!--FIM PRODUTO-->
+                
+                <!--PRODUTO-->
+                <button id="produto2" class="produto" data-name="Beijinho" data-price="5.00">
+                    <img src="/Brigadeiros/Brigadeiros img/WhatsApp_Image_2025-01-24_at_16.39.07__4_-removebg-preview.png" alt="" >
+
+                        <div class="descricao">
+                            <p class="nome-doce">Beijinho</p>
+                            <p class="doce-description">Brigadeiro de 15g com granulê de chocolate</p>
+                            <p class="price">A partir de R$5,00</p>
+                        </div>
+                </button>
+                <!--FIM PRODUTO-->
+            </div>
+
+            <div class="line2">
+                <!--PRODUTO-->
+                <button id="produto3" class="produto" data-name="Brigadeiro de Ninho com Oreo" data-price="7.00">
+                    <img src="/Brigadeiros/Brigadeiros img/WhatsApp Image 2025-01-24 at 16.39.07 (5) (1).jpeg" alt="" >
+
+                    <div class="descricao">
+                        <p class="nome-doce">Brigadeiro de Ninho com Oreo</p>
+                        <p class="doce-description">Brigadeiro de 15g com granulê de chocolate</p>
+                        <p class="price">A partir de R$7,00</p>
+                    </div>
+                </button>
+                <!--FIM PRODUTO-->
+
+                <!--PRODUTO-->
+                <button id="produto4" class="produto" data-name="Brigadeiro Especial" data-price="7.00">
+                    <img src="/Brigadeiros/Brigadeiros img/WhatsApp Image 2025-01-24 at 16.39.09 (1) (2).jpeg" alt="" >
+
+                    <div class="descricao">
+                        <p class="nome-doce">Brigadeiro Especial</p>
+                        <p class="doce-description">Brigadeiro de 15g com granulê de chocolate</p>
+                        <p class="price">A partir de R$7,00</p>
+                    </div>
+                </button>
+                <!--FIM PRODUTO-->
+            </div>
+       </main>
+    </div>
+
+    <!-- Modal único -->
+    <dialog id="produtoModal">
+        <div>
+            <div class="headermodal">
+                <button id="close-modal" class="close-modal"><i class="bi bi-x-circle-fill"></i></button>
+                <h2 id="modalName"></h2>
+            </div>
+            
+            <img id="modalImage" src="" alt="Imagem do produto" style="width: 100%; height: 150px;">
+            <div class="footermodal">
+                <div class="menosemais">
+                    <button id="menosbtn" class="btnmenosemais">-</button>
+                    <span id="quantidade">1</span>
+                    <button id="maisbtn" class="btnmenosemais">+</button>
+                </div>
+
+                <div class="adicionararea">
+                    <button id="add" class="add">Adicionar R$ <span id="modalPrice"></span></button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <div class="mycart">
+        <button id="mycartbtn" class="mycartbtn">
+            <div class="mycarttext">| Meu carrinho<i id="popupcarrinho" class="bi bi-cart3"></i><span id="popupquantity">0</span></div>
+        </button>
+    </div>
+</body>
+
+    
+
+<footer>
+    <img src="/HomePage - Doces/HomePage - Imagens/HomePage - img -logomarca/Gemini_Generated_Image_14mxrp14mxrp14mx-removebg-preview.png" alt="" height="70px">
+</footer>
+</html>
+
+<!-- MyCart Modal -->
+<dialog id="myCartModal" class="myCartModal">
+    <div class="headercartmodal">
+        <button id="closecartmodal"><i class="bi bi-chevron-down"></i></button>
+        <div class="title">MEU CARRINHO</div>
+    </div>
+    <hr></hr>
+    <div id="cartItems"></div> <!-- Local onde os itens do carrinho serão exibidos -->
+    <div class="formadepagamento"></div>
+</dialog>
+
+<!-- Modal de Confirmação -->
+<dialog id="addToCartModal" class="addToCartModal">
+    <div class="addToCartMessage">
+        <p>Item adicionado ao carrinho!</p>
+    </div>
+</dialog>
