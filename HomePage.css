@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+button{
+    cursor: pointer;
+}
+/*HomePage - Header*/
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+.company-name{
+    color: #ff79cc;
+}
+/*HomePage - Menu*/
+.menu{
+    background-color: white;
+    color: black;
+    height: 120px;
+    margin-top: 20px;
+}
+.ms{
+    display: flex;
+    justify-content: space-around;
+}
+.ms button{
+    color: black;
+}
+.m1{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    border: 1.2px solid #dedede;
+    font-size: 10px;
+}
+.m1 img{
+    height: 40px;
+    width: 50px;
+    margin: 0;
+}
+.m2{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    border: 1.2px solid #dedede;
+    font-size: 10px;
+}
+.m2 img{
+    height: 40px;
+    width: 45px;
+    margin: 0;
+}
+.m3{
+    background-color:white;
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    border: 1.2px solid #dedede;
+    font-size: 10px;
+}
+.m3 img{
+    height: 45px;
+    width: 45px;
+    margin: 0;
+}
+.m4{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    border: 1.2px solid #dedede;
+    font-size: 9px;
+}
+.m4 img{
+    height:35px;
+    width: 40px;
+    margin: 0;
+}
+
+.rollbar{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.r1{
+    background-color: #777777;
+    height: 6px;
+    width: 7px;
+    margin: 2px;
+    border-radius: 100%;
+}
+.r2{
+    background-color: black;
+    height: 6px;
+    width: 10px;
+    margin: 2px;
+    border-radius: 40%;
+}
+.r3{
+    background-color: #777777;
+    height: 6px;
+    width: 7px;
+    margin: 2px;
+    border-radius: 100%;
+}
+
+
+/*HomePage - Vitrine*/
+.slider{
+    margin: 0 auto;
+    width: 370px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #000000;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+    opacity: 0.5;
+}
+.slide img{
+    width: 370px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 360px;
+    margin-top: -220px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    padding: 2px;
+    width: 70px;
+    height: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    width: 70px;
+    height: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 360px;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 15px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ffa5dc;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #ffa5dc;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #ffa5dc;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #ffa5dc;
+}
+/*HomePage - Club*/
+.club{
+    color: black;
+    height: 90px;
+}
+.btnclub{
+    border: 1px solid  #da20a5;
+    height: 40px;
+    width: 233px;
+    margin: 20px 0px 0px 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+.textbtnclub{
+    display: flex;
+    margin: 0px 8px;
+    font-size: 22px;
+    align-items: center;
+    color: black;
+}
+.textbtnclub p{
+    margin-left: 8px;
+    color: #da20a5;
+    display: flex;
+}
+.textbtnclub i{
+    margin-left: 5px;
+    color: #da20a5;
+}
+.textbtnclub h2{
+    color: #da20a5;
+    font-size: 25px;
+}
+.moreinfo{
+    margin: 0 20px;
+    font-size: 10px;
+    color: #777777;
+}
+/*HomePage - Text*/
+.text{
+    background-color: white;
+    color: black;
+    height: 60px;
+}
+.mnsgtext{
+    color: #3a3a3a;
+    font-size: 15px;
+    margin: 0 15px;
+}
+/*HomePage - MyFavs*/
+.myfavs{
+    background-color: white;
+    color: black;
+    height: 60px;
+}
+.myfavsbtn{
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0 0 10px;
+    width: 180px;
+    background-color: #da20a5;
+}
+.myfavstext{
+    display: flex;
+    color:white;
+    margin: 7px 0 7px 20px;
+    align-items: center;
+}
+.myfavstext i{
+    color: white;
+    margin-right: 10px;
+}
+/*HomePage - MyCart*/
+.mycartbtn{
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 10px 0px 0 10px;
+    height: 50px;
+    width: 95%;
+    justify-content: center;
+    font-size: 15px;
+    color: #3a3a3a;
+    align-items: center;
+}
+.mycarttext{
+    text-align: start;
+    margin: 0 0 0 20px;
+    align-items: center;
+    display: flex;
+    color: #bbbbbb;
+    justify-content: space-between;
+}
+.mycarttext i{
+    margin-right: 15px;
+    color: black;
+    font-size: 25px;
+}
+
+/*HomePage - Footer*/
+footer{
+    margin-top: 15px;
+    border-top: 1px solid #777777;
+    bottom: 0;
+}
+.footermenu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    color: #ffa5dc;
+    font-size: 25px;
+    bottom: 0;
+}

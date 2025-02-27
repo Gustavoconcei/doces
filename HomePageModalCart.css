@@ -1,0 +1,127 @@
+.myCartModal {
+    width: 100%; /* Tamanho do dialog */
+    height: 100%;
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Alinha horizontalmente */
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    top: 50%; /* Coloca no centro verticalmente */
+    left: 50%; /* Coloca no centro horizontalmente */
+    transform: translate(-50%, 100%); /* Inicialmente fora da tela (desceu) */
+    box-shadow: -1px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra inicial */
+    position: absolute;
+    transition: transform 2s ease, box-shadow 1s ease; /* Transição suave para movimento e sombra */
+    display: none; /* Inicialmente invisível */
+}
+
+.myCartModal.activated {
+    transform: translate(-50%, -50%); /* Subir para o centro da tela */
+    box-shadow: -1px 10px 30px rgba(0, 0, 0, 0.6); /* Sombra mais forte ao abrir */
+}
+.headercartmodal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid #da20a574;
+}
+.title{
+    margin: 20px 0 20px 0;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+}
+
+.mycartbtn {
+    cursor: pointer;
+}
+
+#closecartmodal{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    color: #da20a5;
+    font-size: 30px;
+}
+
+/* Estilos para os itens do carrinho */
+#cartItems {
+    margin: 0 20px 20px 20px;
+}
+
+
+.cart-item {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+}
+/* Estilo específico para a quantidade */
+.cart-item p:nth-of-type(1) {
+    font-weight: bold;
+    color: #da20a5; /* Cor do texto para quantidade */
+}
+
+/* Estilo específico para o nome do produto */
+.cart-item p:nth-of-type(2) {
+    font-weight: normal;
+    color: #000000;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+/* Estilo específico para o preço */
+.cart-item p:nth-of-type(3) {
+    font-weight: normal;
+    color: #000;
+}
+/* Estilo para o total do carrinho */
+.total-carrinho {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #da20a5; /* Cor do total */
+    text-align: right; /* Alinha o total à direita */
+}
+/* Estilo para o botão de remover */
+.remove-btn {
+    background-color: transparent;
+    color: #da20a5;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+}
+/* Estilos para o modal de confirmação */
+.addToCartModal {
+    position: fixed;
+    width: 250px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #da20a5;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    display: none; /* Inicialmente, o modal está escondido */
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border: none;
+}
+
+.addToCartModal.show {
+    display: block;
+    opacity: 1;
+}
+
+.addToCartModal .addToCartMessage {
+    text-align: center;
+}
+
