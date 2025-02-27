@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    height: 110px;
+    background-color: black;
+}
+header img{
+    width: 100%;
+    height: 110px;
+    opacity: .6;
+}
+
+/*Brigadeiro - Name Container*/
+.name-container{
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+}
+.name-container img{
+    height: 30px;
+    width: 40px;
+}
+.name-container p{
+    font-size: 20px;
+    font-weight: bold; 
+    color: #ffb7d3;
+    justify-content: center;
+    margin-left: 75px;
+    align-items: center;
+    display: flex;
+}
+.name-container button{
+    border: none;
+    background-color: white;
+}
+.name-container i{
+    font-size: 25px;
+    color: #da20a5;
+}
+
+/*Brigadeiro - Tipos de brigadeiros (text)*/
+.tipos-brigadeiros{
+    margin: 40px 20px 0 10px;
+    font-size: 20px;
+}
+
+/*MENU*/
+#menu{
+    margin: 0 0 0 0;
+    height: 270px;
+}
+.line1, .line2{
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+}
+.produto{
+    background-color: white;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.produto img{
+    width: 180px;
+    height: 60px;
+}
+
+/*Quad text*/
+.nome-doce{
+    text-align: start;
+    font-size: 14px;
+    color: #535353;
+    margin: 0 0 0 10px;
+}
+.doce-description{
+    text-align: start;
+    margin: 0 10px 0 10px;
+    font-size: 10px;
+    color: #bbbbbb;
+}
+.price{
+    text-align: start;
+    margin: 5px 0 0 10px;
+    font-size: 10px;
+    color: #da20a5;
+}
+
+
+
+/*Meu carrinho*/
+.mycartbtn{
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 50px 0px 0 10px;
+    height: 50px;
+    width: 95%;
+    justify-content: center;
+    font-size: 15px;
+    color: #3a3a3a;
+    align-items: center;
+}
+
+.mycarttext{
+    text-align: start;
+    display: flex;
+    margin: 0px 0px 0px 20px;
+    align-items: center;
+    color: #bbbbbb;
+}
+.mycarttext i{
+    display: flex;
+    justify-content: end;
+    color: black;
+    font-size: 25px;
+    margin-left: 200px;
+}
+.mycarttext span{
+    background-color: #da20a5;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0px 0px 20px 320px;
+    position: absolute;
+    display: flex;
+}
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0px 0;
+    border-top: 1px solid #a8a8a8;
+}
+footer img{
+    margin-top: 10px;
+}
+
+/*Dialog*/
+.headermodal {
+    display: flex;
+    justify-content: center; /* Centraliza o título */
+    align-items: center; /* Alinha verticalmente */
+    position: relative; /* Necessário para o botão de fechar */
+    width: 100%;
+    margin-bottom: 20px; /* Espaço entre o título e o conteúdo */
+}
+
+/* Estilo para o botão de fechar */
+.close-modal {
+    position: absolute; /* Posiciona o botão em relação ao cabeçalho */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    background-color: transparent; /* Torna o fundo transparente */
+    border: none; /* Remove a borda */
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer;
+    z-index: 1; /* Garante que o botão fique acima do conteúdo */
+    color: #da20a5;
+}
+#modalName{
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 17px;
+}
+#produtoModal{
+    width: 90%; /* Tamanho do dialog */
+    height: 43%;
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Alinha horizontalmente */
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    top: 50%; /* Coloca no centro verticalmente */
+    left: 50%; /* Coloca no centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para realmente centralizar */
+    box-shadow: -1px 10px 30px rgba(0, 0, 0, 0.301);  /* Sombra */
+    transition: box-shadow 1s ease;  /* Transição suave para a sombra */
+    position: absolute;
+}
+
+
+.footermodal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+}
+.btnmenosemais{
+    background-color: white;
+    border: none;
+    font-size: 25px;
+    width: 30px;
+    padding: 5px;
+    color: #da20a5;
+}
+.menosemais{
+    margin: 15px 0 0 0;
+    width: 105px;
+}
+#quantidade{
+    font-size: 20px;
+}
+#add{
+    background-color: #da20a5;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+

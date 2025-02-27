@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+header{
+    margin-top: 15px;
+    margin-left: 95px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #da20a5;
+    font-size: 25px;
+}
+
+header i{
+    font-size: 20px;
+    color: black;
+    color: #ffb7e3;
+}
+
+
+#sidebar {
+    position: absolute;
+    height: 92vh;
+    border-radius: 0 40px 40px 0;
+    background-color: rgb(240, 248, 248);
+}
+
+#side-itens{
+    flex-direction: column;
+    list-style: none;
+}
+.side-item{
+    margin-top: 10px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.side-item i{
+    color: #da20a5;
+    font-size: 25px; 
+    margin-left: 15px;
+}
+
+#sidebar-content{
+    margin-top: 80px;
+    position: relative;
+}
+#open-btn{
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    border: none;
+    background-color: none;
+    font-size: 30px;
+}
+
+#sidebar.open-sidebar{
+    min-width: 20%;
+}
+#sidebar.show {
+    left: 0; /* Move para a posição visível */
+}
+.bi-list{
+    color: #ffb7e3;
+}
+
+.bi-cart3{
+    color: black;
+}
+header h2{
+    margin-left: -68px;
+    font-size: 25px;
+}
+
+/*ChocoBox - Publi*/
+.publi{
+    background-color: rgb(255, 255, 255);
+    height: 180px;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+.poster{
+    width: 340px;
+    justify-content: center;
+    display: flex;
+    margin: 30px 0px 0px 30px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/*ChocoBox - ChocoMini*/
+.chocomini{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+}
+.fotochocomini{
+    background-image: linear-gradient(to right, #ffb7e3, #5ce1e6);
+    height: 80px;
+    width: 110px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+.textchocominiarea{
+    width: 160px;
+    height: 80px;
+    margin: 0px 10px 10px 10px;
+    color: #da20a5;
+}
+.textchocomini{
+    display: flex;
+}
+.box{
+    font-weight: bold;
+}
+.nivel{
+    color: #5ce1e6;
+    margin-left: 8px;
+    font-weight: bold;
+}
+.subtextchocomini{
+    font-size: 9px;
+    color: #bbbbbb;
+    width: 120px;
+}
+.vermaismini{
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 10px 0px;
+}
+.vermaismini p{
+    color: #ffb7e3;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*ChocoBox - ChocoClássico*/
+.chococlassico{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+}
+.fotochococlassico{
+    background-image: linear-gradient(to right, #ffb7e3, #5ce1e6);
+    height: 80px;
+    width: 110px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+.textchococlassicoarea{
+    width: 160px;
+    height: 80px;
+    margin: 0px 10px 10px 10px;
+    color: #da20a5;
+}
+.textchococlassico{
+    display: flex;
+}
+.subtextchococlassico{
+    font-size: 9px;
+    color: #bbbbbb;
+    width: 120px;
+}
+.vermaisclassico{
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 10px 0px;
+}
+.vermaisclassico p{
+    color: #ffb7e3;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*ChocoBox - ChocoPremium*/
+.chocopremium{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+}
+.fotochocopremium{
+    background-image: linear-gradient(to right, #ffb7e3, #5ce1e6);
+    height: 80px;
+    width: 110px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+.textchocopremiumarea{
+    width: 160px;
+    height: 80px;
+    margin: 0px 10px 10px 10px;
+    color: #da20a5;
+}
+.textchocopremium{
+    display: flex;
+}
+.subtextchocopremium{
+    font-size: 9px;
+    color: #bbbbbb;
+    width: 120px;
+}
+.vermaispremium{
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 10px 0px;
+}
+.vermaispremium p{
+    color: #ffb7e3;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.vermaispremium button, .vermaisclassico button, .vermaismini button{
+    background-color: white;
+    border: none;
+}
+
+.company-name{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+footer{
+    margin-top: 40px;
+    border-top: 1px solid #d2d2d2;
+}
